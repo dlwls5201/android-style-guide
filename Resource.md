@@ -193,4 +193,5 @@
 ```
 
 ## 기타
-- `android:xxxLeft/android:xxxRight` 대신 `android:xxxStart/android:xxxEnd`로 사용한다.(기타 Left/Right로 사용하는 부분 모두)
+- Package는 소문자로만 선언한다.
+- Class명은 카멜케이스를 따른다.
