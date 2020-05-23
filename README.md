@@ -2,8 +2,6 @@
 각 항목별 가이드는 아래에서 확인해볼 수 있습니다.
 - [Java](Java.md)
 - [Resource](Resource.md)
-- [Gradle](Gradle.md)
-- [Architecture](Architecture.md)
 
 # 컨벤션 지키기
 
