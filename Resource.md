@@ -43,14 +43,14 @@
 | RecyclerView | `rv_` |
 | EditText | `et_` |
 | ProgressBar | `pb_` |
-| FrameLayout | `fl_` |
 | NestedScrollView | `nsv_` |
 | Space | `space_` |
 | Switch | `switch` |
-| AbcDeFgh | `adf_` |
-| Abcdef | `abcdef_` |
+| FrameLayout | `lyt_` |
+| LinearLayout | `lyt_` |
+| ReleativeLayout | `lyt_` |
+| ConstraintLayout | `lyt_` |
 | MyCustomView | `my_custom_view` |
-| YourView | `your_view` |
 
 
 ### 기타
@@ -89,17 +89,6 @@
 | Disabled | `_disabled` |
 | Selected | `_selected` |
 
-### Background
-- 배경색이 pressed상태에 따라서 white -> sky_blue로 변하는 경우는 `bg_white_to_sky_blue.xml`로 한다.
-- 배경이 white색의 24dp로 테두리를 그리는 경우는 `bg_white_radius_24dp.xml`로 한다.
-- 배경이 투명하며 배경의 선만을 sky_blue색의 8dp로 테두리를 그리는 경우는 `bg_stroke_sky_blue_radius_8dp.xml`로 한다.
-
-
-### 기타
-
-- `img_xxx`의 경우 파일의 크기가 큰경우가 많으므로 [tinypng](https://tinypng.com/)에서 파일크기를 줄인뒤에 추가 해주어야 한다.
-
-
 ### 예시
 - `btn_call_normal.png`: 전화걸기 버튼 이미지
 - `btn_call_pressed.png`: 전화걸기 버튼 눌렸을때의 이미지
@@ -127,7 +116,6 @@
 <dimen name="register_car_item_grade_start_padding">56dp</dimen>  
 <dimen name="register_car_item_car_detail_start_padding">72dp</dimen>
 ```
-- 2번이상 쓰이는경우는 dimen에 정의해주는 것을 강제하고 1번만 쓰이는경우에는 xml코드에 넣어도 괜찮은것으로 한다.
 
 ### Height/Size
 - 높이만 지정할때는 `height`, 1:1 비율로 같은 값이 들어갈때는 `size`로 한다.
@@ -138,16 +126,15 @@
 <dimen name="dealer_profile_image_size">48dp</dimen>
 ```
 
-
 ## String
 -  `<WHERE>_<DESCRIPTION>`
-- 특정화면에서 쓰이는 텍스트 아니라 여러군데에서 공통으로 재사용될 텍스트라면 `all_<DESCRIPTION>`로 이름을 짓는다
+- 특정화면에서 쓰이는 텍스트 아니라 여러군데에서 공통으로 재사용될 텍스트라면 `<DESCRIPTION>`로 이름을 짓는다
 
 ### 예시
 - `permission_dialog_camera_title`: 카메라권한을 요구하는 Dialog의 제목
--  `permission_dialog_camera_description`: 카메라권한을 요구하는 Dialog의 설명내용
-- `all_yes`: 네
-- `all_ok_understand`: 여러 Dialog에서 `네, 알겠습니다`로 쓰이는 공통의 텍스트
+- `permission_dialog_camera_description`: 카메라권한을 요구하는 Dialog의 설명내용
+- `yes`: 네
+- `ok_understand`: 여러 Dialog에서 `네, 알겠습니다`로 쓰이는 공통의 텍스트
 
 ### 문단
 - 문단형태의 긴 문자열로 개행(`\n`)이 필요한 경우, `\n`을 다음줄의 앞에 쓴다.
@@ -156,13 +143,6 @@
         \n문단 두번째줄
         \n문단 세번째줄</string>
 ````
-
-
-## Theme/Style
-- Theme는 `theme.xml`, Style은 `style.xml`에 추가한다.
-- 1번만 쓰이는 경우에는 style을 만들지 않는다.
-(단, 앞으로 재사용될 가능성이 높은 경우에는 가능)
-- 모든 style은 parent를 갖는다.
 
 ### Naming
 - style의 이름은 parent의 이름패턴과 맞춘다
@@ -191,7 +171,3 @@
 ...
 </declare-styleable>
 ```
-
-## 기타
-- Package는 소문자로만 선언한다.
-- Class명은 카멜케이스를 따른다.
