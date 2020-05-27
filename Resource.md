@@ -12,6 +12,7 @@
 | `view_` | CustomView에서 쓰이는 layout |
 | `item_` | RecyclerView, GridView, ListView등에서 ViewHolder에 쓰이는 layout |
 | `layout_` | `<include/>`로 재사용되는 공통의 layout |
+
 ### 예시
 - `activity_main`: MainActivity의 layout
 - `fragment_request`: RequestFragment의 layout
@@ -33,7 +34,6 @@
 </br>(만약 1개의 xml에 같은 여러 CustomView가 존재한다면 `<WHAT>_<DESCRIPTION>`의 형태로 정한다.)
 4. 아래표에 해당 View의 Prefix가 정의되어 있지 않다면 팀에서 상의해서 이름을 정한뒤 추가한다.
 
-
 ### WHAT
 | View | Prefix |
 | ------------- | ------------- |
@@ -45,13 +45,12 @@
 | ProgressBar | `pb_` |
 | NestedScrollView | `nsv_` |
 | Space | `space_` |
-| Switch | `switch` |
+| Switch | `switch_` |
 | FrameLayout | `lyt_` |
 | LinearLayout | `lyt_` |
 | ReleativeLayout | `lyt_` |
 | ConstraintLayout | `lyt_` |
 | MyCustomView | `my_custom_view` |
-
 
 ### 기타
 - 해당 View를 특정기능과 상관없이 `VISIBLE/GONE`등의 View의 용도로 사용한다면 `view_xxx`로 사용하는것도 허용한다.
@@ -95,7 +94,6 @@
 - `btn_call.xml`: 전화걸기 버튼 이미지의 selector xml
 - `ic_dealer_gift.png`: 딜러가 보내준 기프티콘을 보여줄때 표시되는 이미지
 - `img_splash_chart.png`: 스플래시 화면에서 보여지는 차트 이미지
--
 
 ## Dimension
 - `<WHERE>_<DESCRIPTION>_<WHAT>`
