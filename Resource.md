@@ -22,6 +22,7 @@
 - `layout_dealer_review`: 재사용되는 뷰 layout
 
 ## ID
+- 코를린 익스텐션 적용을 위헤 카멜 케이스로 네이밍 합니다.
 - `<WHAT>_<WHERE>_<DESCRIPTION>`
 - View의 대문자를 축약하여 `<WHAT>`의 Prefix로 사용한다.
 - 아래 이름규칙을 적용한다.
