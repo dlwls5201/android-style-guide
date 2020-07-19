@@ -46,10 +46,10 @@
 | NestedScrollView | `nsv_` |
 | Space | `space_` |
 | Switch | `switch_` |
-| FrameLayout | `lyt_` |
-| LinearLayout | `lyt_` |
-| ReleativeLayout | `lyt_` |
-| ConstraintLayout | `lyt_` |
+| FrameLayout | `fl_` |
+| LinearLayout | `ll_` |
+| ReleativeLayout | `rl_` |
+| ConstraintLayout | `cl_` |
 | MyCustomView | `my_custom_view` |
 
 ### 기타
