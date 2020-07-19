@@ -58,9 +58,8 @@
 </br>: MainActivity의 제목 용도인 textView 경우 -> `tvMainTitle`
 
 ## Drawable
-- `<WHAT>(_<WHERE>)_<DESCRIPTION>(_<SIZE>)`
+- `<WHAT>(_<WHERE>)_<DESCRIPTION>`
 - 이미지가 여러군데에서 활용될 경우, `<WHERE>`는 생략 가능하다.
-- 이미지의 크기가 1개밖에 없는 경우, `<SIZE>`는 생략 가능하다.
 
 ### What
 | Prefix | 설명 |
