@@ -53,8 +53,8 @@
 
 ### WHERE
 - Acitivty, Fragment명 없이 사용되는 곳을 적는다.
-</br>: `MainActivity이면 Main만 <where>에 적어줍니다.`
-</br>: `MainActivity의 제목 용도의 textView -> tvMainTitle`
+</br>: MainActivity이면 Main만 `<where>`에 적어줍니다.
+</br>: MainActivity의 제목 용도인 textView 경우 -> `tvMainTitle`
 
 ## Drawable
 - `<WHAT>(_<WHERE>)_<DESCRIPTION>(_<SIZE>)`
@@ -69,7 +69,13 @@
 | `bg_` | 버튼이 아닌 화면에 보여지는 이미지 |
 | `img_` | 실제사진이거나 아이콘형태가 아닌 일러스트형태의 이미지 |
 | `div_` | divider로 활용되는 이미지 |
+| `rect_` | 네모 모양의 drawable |
+| `circle_` | 원 모양의 drawable |
 
+- 공통으로 사용하는 회색 네모인 Drawable
+: `rect_gray_rad0`
+- 공통으로 사용하는 모서리가 10라운드가 들어간 회색 네모인 Drawable
+: `rect_gray_rad10`
 
 ## Dimension
 - `<WHERE>_<DESCRIPTION>_<WHAT>`
